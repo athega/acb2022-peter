@@ -1,5 +1,7 @@
 # acb2022-peter
 
+![WASM-4 logo](https://wasm4.org/img/logo.png)
+
 An experiment written in [Zig](https://ziglang.org/) for the [WASM-4](https://wasm4.org) fantasy console.
 
 ## Building
