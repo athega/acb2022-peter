@@ -12,8 +12,6 @@ const State = struct {
     y: i32 = 0,
     p: *const u8 = w4.GAMEPAD1,
 
-    // Platinum
-    // https://lospec.com/palette-list/platinum
     palette: [4]u32 = .{
         0xe9efec,
         0xa0a08b,
