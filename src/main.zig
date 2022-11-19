@@ -21,8 +21,24 @@ const State = struct {
 
     fn update(self: *State) void {
         // Get the mouse coordinates
-        self.x = @intCast(i32, w4.MOUSE_X.*);
-        self.y = @intCast(i32, w4.MOUSE_Y.*);
+        // self.x = @intCast(i32, w4.MOUSE_X.*);
+        // self.y = @intCast(i32, w4.MOUSE_Y.*);
+
+        if (self.btn(w4.BUTTON_RIGHT)) {
+            self.x += 1;
+        }
+
+        if (self.btn(w4.BUTTON_LEFT)) {
+            self.x -= 1;
+        }
+
+        if (self.btn(w4.BUTTON_DOWN)) {
+            self.y += 1;
+        }
+
+        if (self.btn(w4.BUTTON_UP)) {
+            self.y -= 1;
+        }
     }
 
     fn draw(self: *State) void {
